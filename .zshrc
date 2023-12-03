@@ -104,6 +104,7 @@ alias zshconfig="vi ~/.zshrc"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+alias pbcopy="xclip -sel clip"
 alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
 
 
