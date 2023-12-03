@@ -13,14 +13,14 @@
     ```
 2. Install the user themes shell extension by heading to this website (you need to have the shell extension browser addon installed) <br>
   https://extensions.gnome.org/extension/19/user-themes/
-3. Now open the "Extensions" app and activate "User Themes". After
-4. Open the "Tweaks" app and under "Appearance" select the Yaru-Blue-Dark theme for Applications and Shell. While you are here also switch the Caps-Lock and Esc key and set a custom wallpaper for the Desktop and Lockscreen
+3. Now open the "Extensions" app and activate "User Themes"
+4. Open the "Tweaks" app, and under "Appearance" select the Yaru-Blue-Dark theme for Applications and Shell. While you are here, also switch the Caps-Lock and Esc keys and set a custom wallpaper for the Desktop and Lockscreen
 
 ### Fonts
 1. Install GNOME's font manager:
-  ```bash
-  sudo apt install font-manager
-  ```
+      ```bash
+      sudo apt install font-manager
+      ```
 3. Then download and install JetBrains Mono Nerd Font: https://www.nerdfonts.com/font-downloads.
 
 
@@ -44,13 +44,13 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
   ```bash
   curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   ```
-2. Make sure to integrate it into GNOME properly by creating a `.desktop` file as explained in the doco.
+2. Make sure to integrate it into GNOME properly by creating a `.desktop` file, as the doc explains.
 
-3. Lastly copy the Kitty configuration from this repo into your `.config` folder
+3. Lastly, copy the Kitty configuration from this repo into your `.config` folder
 
    
 ### Neovim 
-1. Head over to https://github.com/neovim/neovim/releases/tag/stable and download to latest AppImage.
+1. Head over to https://github.com/neovim/neovim/releases/tag/stable and download the latest AppImage.
 2. Make it executable:
   ```
   chmod u+x ./nvim.appimage
@@ -63,12 +63,12 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
   ```
   sudo apt-get install python3-neovim
   ```
-  as well as your mamba/conda base enviroment:
+  As well as your mamba/conda base environment:
   ```bash
   python3 -m pip install --user --upgrade pynvim
   ```
-4. opy the `.config/nvim` folder from this repo into your home director and run `nvim` to install all plugins. 
-5. As a last step you may want to install Python and C++ Lsp servers using mason. Simply type `<space>+c+m` to open the mason menu and install them. 
+4. copy the `.config/nvim` folder from this repo into your home directory and run `nvim` to install all plugins. 
+5. As a last step, you may want to install Python and C++ Lsp servers using Mason. Simply type `<space>+c+m` to open the Mason menu and install them. 
 
 
 
@@ -94,7 +94,7 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
   ```
   mamba init zsh 
   ```
-3. Afterwards check your `.zshrc` if everything worked out and there are no duplicates. 
+3. Afterwards, check your `.zshrc` to see if everything worked out and there are no duplicates. 
   Make sure to comment the following lines in `.zshrc` if you are using ROS:
     ```zsh
     #        . "/home/adrian/mambaforge/etc/profile.d/conda.sh"
@@ -109,7 +109,7 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
     ```shell
     curl -sS https://starship.rs/install.sh | sh
     ```
-2. Set Starship Nerd Font Symbols, make sure you installed the JetBrains Mono Nerd Font:
+2. Set Starship Nerd Font Symbols; make sure you installed the JetBrains Mono Nerd Font:
    ```shell
    starship preset nerd-font-symbols -o ~/.config/starship.toml
    ```
@@ -122,9 +122,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 
 ### NNN
-1. Check offical guide for changes before running any commands: https://github.com/jarun/nnn/wiki/Usage#installation
+1. Check the offical guide for changes before running any commands: https://github.com/jarun/nnn/wiki/Usage#installation
 2. Download and extract the latest *nnn* release: https://github.com/jarun/nnn/releases/
-3. Install all prerquisits:
+3. Install all prerequisites:
    ```
    sudo apt-get install pkg-config libncursesw5-dev libreadline-dev
    ```
@@ -132,11 +132,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
   ```
   make O_NERD=1 
   ```
-  then install it:
+  Then install it:
   ```
   sudo make strip install
   ```
-5. Lastly download adn install all plugins:
+5. Lastly download and install all plugins:
    ```
    sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
    ```
