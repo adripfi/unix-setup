@@ -122,7 +122,7 @@ source /opt/ros/noetic/setup.zsh
 # --------------- NNN
 # always show hidden
 # export NNN_OPTS="H" # 'H' shows the hidden files. Same as option -H (so 'nnn -deH')
-# export LC_COLLATE="C" # hidden files on top
+export LC_COLLATE="C" # hidden files on top
 
 # preview
 export NNN_FIFO="/tmp/nnn.fifo" # temporary buffer for the previews
