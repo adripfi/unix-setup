@@ -26,13 +26,13 @@
 
 ### Chrome over scroll history navigation 
 1. Edit the Chrome desktop file `/usr/share/applications/google-chrome.desktop` and append the following flag to all `Exec= ..` lines (should be three):
-  ```shell
-  --enable-features=TouchpadOverscrollHistoryNavigation
-  ```
+      ```shell
+      --enable-features=TouchpadOverscrollHistoryNavigation
+      ```
 2. To persist this, copy /usr/share/applications/google-chrome.desktop to ~/.local/share/applications
-  ```shell
-  cp /usr/share/applications/google-chrome.desktop ~/.local/share/applications/
-  ```
+      ```shell
+      cp /usr/share/applications/google-chrome.desktop ~/.local/share/applications/
+      ```
 
 ### Python setup 
 Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaforge.
@@ -41,9 +41,9 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
 ## CLI setup
 ### Kitty
 1. Install Kitty according to the official documentation https://sw.kovidgoyal.net/kitty/binary/.
-  ```bash
-  curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-  ```
+      ```bash
+      curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+      ```
 2. Make sure to integrate it into GNOME properly by creating a `.desktop` file, as the doc explains.
 
 3. Lastly, copy the Kitty configuration from this repo into your `.config` folder
@@ -52,13 +52,13 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
 ### Neovim 
 1. Head over to https://github.com/neovim/neovim/releases/tag/stable and download the latest AppImage.
 2. Make it executable:
-  ```
-  chmod u+x ./nvim.appimage
-  ```
+      ```
+      chmod u+x ./nvim.appimage
+      ```
 3. Then move it to a folder indexed in your `$PATH`:
-  ```
-  sudo mv nvim.appimage /usr/local/bin/nvim
-  ```
+      ```
+      sudo mv nvim.appimage /usr/local/bin/nvim
+      ```
 3. Also install neovim python support for your system interpreter:
   ```
   sudo apt-get install python3-neovim
@@ -74,27 +74,27 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
 
 ### ZSH
 1. Install zsh:
-  ```
-  sudo apt install zsh
-  ```
+      ```
+      sudo apt install zsh
+      ```
 2. Install oh-my-zsh:
-  ```zsh
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ```
+      ```zsh
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      ```
 3. Download plugins:
-  ```zsh
-  git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-  git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
-    ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
-  git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
-  ( cd $ZSH_CUSTOM/plugins && git clone https://github.com/chrissicool/zsh-256color )
-  ```
+      ```zsh
+      git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+      git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+        ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+      git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
+      ( cd $ZSH_CUSTOM/plugins && git clone https://github.com/chrissicool/zsh-256color )
+      ```
 3. Then copy the `.zshrc` from this repo into your home directory. 
 4. Now you can initialize mamba/conda
-  ```
-  mamba init zsh 
-  ```
-3. Afterwards, check your `.zshrc` to see if everything worked out and there are no duplicates. 
+      ```
+      mamba init zsh 
+      ```
+6. Afterwards, check your `.zshrc` to see if everything worked out and there are no duplicates. 
   Make sure to comment the following lines in `.zshrc` if you are using ROS:
     ```zsh
     #        . "/home/adrian/mambaforge/etc/profile.d/conda.sh"
@@ -129,13 +129,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
    sudo apt-get install pkg-config libncursesw5-dev libreadline-dev
    ```
 4. Compile nnn with nerd symbols on:
-  ```
-  make O_NERD=1 
-  ```
-  Then install it:
-  ```
-  sudo make strip install
-  ```
+      ```
+      make O_NERD=1 
+      ```
+      Then install it:
+      ```
+      sudo make strip install
+      ```
 5. Lastly download and install all plugins:
    ```
    sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
