@@ -103,6 +103,15 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
     ```zsh
     #    . "/home/adrian/mambaforge/etc/profile.d/mamba.sh"
     ```
+### Exa 
+Install Exa, check its repo first: https://github.com/ogham/exa
+```
+sudo apt install exa
+```
+
+### Autojump
+Clone and install autjump as explained here: https://github.com/wting/autojump
+**Check compatibility with zsh!**
 
 ### Starship Prompt
 1. Download and install Starship shell prompt:
@@ -113,6 +122,8 @@ Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaf
    ```shell
    starship preset nerd-font-symbols -o ~/.config/starship.toml
    ```
+
+
 
 ### FZF
 Install fuzzy finder but **do not activate** its keybindings during setup; we have done that already in the `.zshrc` file:
