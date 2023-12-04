@@ -1,0 +1,10 @@
+# Ignore everythin
+*
+
+# Excpet
+!.zshrc
+!.config/nvim/*
+!.config/kitty/*
+!.ideavimrc
+!.gitignore
+
