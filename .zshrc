@@ -121,6 +121,8 @@ zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 source /opt/ros/noetic/setup.zsh
 
 # --------------- NNN
+# use vim as editor
+export EDITOR="nvim"
 # always show hidden
 # export NNN_OPTS="H" # 'H' shows the hidden files. Same as option -H (so 'nnn -deH')
 export LC_COLLATE="C" # hidden files on top
@@ -164,6 +166,8 @@ n ()
         rm -f "$NNN_TMPFILE" > /dev/null
     }
 }
+# set alias here otherwise it would mess up the function definition
+alias n="n -e"
 
 # catpuccin colors for nnn
 BLK="03" CHR="03" DIR="04" EXE="02" REG="07" HARDLINK="05" SYMLINK="05" MISSING="08" ORPHAN="01" FIFO="06" SOCK="03" UNKNOWN="01"
