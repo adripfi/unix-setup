@@ -109,6 +109,17 @@ Install Exa, check its repo first: https://github.com/ogham/exa
 sudo apt install exa
 ```
 
+### Bat
+Install bat, a better alternative for cat:
+```
+sudo apt install bat
+```
+This command may install `bat` as `batcat`, so check for that. If this problem occurs, you can fix it using the following:
+```
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+
 ### Autojump
 Clone and install autjump as explained here: https://github.com/wting/autojump
 **Check compatibility with zsh!**
