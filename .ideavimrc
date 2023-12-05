@@ -25,3 +25,6 @@ nmap <leader>c :action com.jetbrains.python.console.RunPythonOrDebugConsoleActio
 
 map } :action MethodDown<CR>
 map { :action MethodUp<CR>
+
+nmap H :action PreviousTab<CR>
+nmap L :action NextTab<CR>
