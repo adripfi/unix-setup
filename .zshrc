@@ -104,6 +104,7 @@ alias zshconfig="vi ~/.zshrc"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+alias cat="bat"
 alias pbcopy="xclip -sel clip"
 alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
 
@@ -119,6 +120,7 @@ zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 
 #  source ros
 source /opt/ros/noetic/setup.zsh
+# source ~/catkin_ws/devel/setup.zsh
 
 # --------------- NNN
 # use vim as editor
@@ -200,6 +202,7 @@ chpwd_functions+=__jump_chpwd
 compctl -U -K jump_completion j
 
 
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/adrian/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -219,3 +222,5 @@ if [ -f "/home/adrian/mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+
+eval $(thefuck --alias)
