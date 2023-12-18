@@ -5,5 +5,5 @@ return {
     { "S", mode = { "n", "x", "o" }, false },
     { "s", mode = { "n", "x", "o" }, false },
   },
-  enabled = false,
+  vscode = true,
 }
