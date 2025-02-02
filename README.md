@@ -33,6 +33,15 @@
       ```shell
       cp /usr/share/applications/google-chrome.desktop ~/.local/share/applications/
       ```
+      
+### VS Code Fix Blurry Font on Wayland
+1. Edit the VS Code desktop file `/usr/share/applications/code.desktop` and append the following flag to all `Exec= ..` lines (should be three):
+      ```shell
+      --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug --log debug
+      ```
+2. To persist this, copy /usr/share/applications/google-chrome.desktop to ~/.local/share/applications
+      ```shell
+      cp /usr/share/applications/code.desktop ~/.local/share/applications/
 
 ### Python setup 
 Download and install mambaforge: https://github.com/conda-forge/miniforge#mambaforge.
